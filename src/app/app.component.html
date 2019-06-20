@@ -1,7 +1,7 @@
 <div class="container mt-3">
-  <button class="btn btn-primary">Display Details</button>
+  <button class="btn btn-primary" (click)="handleClick()">
+    {{ display }} details
+  </button>
 
-  <div class="mt-3">
-    <p>Hello, World!</p>
-  </div>
+  <p class="mt-3" *ngIf="!notClicked">Hello, World!</p>
 </div>
