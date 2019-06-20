@@ -16,6 +16,16 @@ export class AppComponent {
     this.notClicked = !this.notClicked;
     this.notClicked ? (this.display = "Display") : (this.display = "Hide");
     this.array.push("Lorem");
-    console.log(this.array);
+    // console.log(this.array);
+  }
+
+  getColor(i) {
+    return i + 1 >= 5 ? "blue" : "transparent";
+  }
+  setText(i) {
+    if (i + 1 >= 5) {
+      return true;
+    }
+    return false;
   }
 }
